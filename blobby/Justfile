@@ -1,0 +1,8 @@
+SCAD := "/Applications/OpenSCAD\\ -\\ Snapshot.app/Contents/MacOS/OpenSCAD"
+
+all seed:
+    {{SCAD}}  \
+        -o blobby_{{seed}}_prepared.stl \
+        --export-format binstl \
+        -D "seed={{seed}}" \
+        blobby_preparation.scad

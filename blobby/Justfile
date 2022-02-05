@@ -1,7 +1,9 @@
-SCAD := "/Applications/OpenSCAD\\ -\\ Snapshot.app/Contents/MacOS/OpenSCAD"
+set dotenv-load := true
 
-all seed:
-    {{SCAD}}  \
+default: (one "42")
+
+one seed:
+    OpenSCAD  \
         -o blobby_{{seed}}_prepared.stl \
         --export-format binstl \
         -D "seed={{seed}}" \

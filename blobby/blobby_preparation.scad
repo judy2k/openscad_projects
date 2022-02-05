@@ -2,11 +2,10 @@
 
 seed = 4;
 
-sphere_count = 50;
-sphere_size = 10;
-blob_size = 10;
+blob_size = 15;
+quick=true;
 
-use <blobby.scad>;
+use <mo_random.scad>;
 
 module biscuit(margin_x=0, margin_y=0, margin_z=0) {
     cube([5 + margin_x, 1 + margin_y , 8 + margin_z], center=true);
@@ -58,9 +57,5 @@ module prepare(i) {
     biscuit();
 }
 
-for (i = [0:5]) {
-    translate([0, i * 2 * (blob_size + sphere_size), 0])
-    prepare(i) {
-        blobby(sphere_count, sphere_size, blob_size, i);
-    }
-}
+prepare("J")
+    mo_random(blob_size, seed, quick);

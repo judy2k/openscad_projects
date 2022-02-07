@@ -2,10 +2,16 @@
 
 $fn = 32;
 edge_radius = 7;
+prepare = true;
 
+if (prepare) {
 split(30, 35)
+    diamond()
+        sphere(r=edge_radius);
+} else {
 diamond()
     sphere(r=edge_radius);
+}
 
 module diamond() {
     hull() {

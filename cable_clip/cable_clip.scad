@@ -8,7 +8,7 @@ g_cable_loops = 5; // [2:10]
 g_clip_thickness = 1.2; // [1.2:0.4:3.2]
 
 // Below are not customizer vars.
- module __Customizer_Limit__ () {}
+module __Customizer_Limit__ () {}
 
 $fn=40;
 

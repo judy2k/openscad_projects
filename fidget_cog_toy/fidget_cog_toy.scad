@@ -1,4 +1,3 @@
-//include <BOSL/involute_gears.scad>
 use <BOSL/involute_gears.scad>
 
 

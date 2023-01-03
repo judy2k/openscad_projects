@@ -18,7 +18,8 @@ The primary design features of this clip are:
 
 * Parameterized - print a custom clip to match your cable diameter and length!
 * Quick print. I wanted a clip I could print in about 3 minutes per clip.
-* PLA or PETG. I've printed this in both materials. I feel like PETG is probably stronger because it has more flex, but both work fine.
+* Stays clipped to the cable when the other loops are removed.
+* Can be printed in PLA or PETG. I've printed this in both materials. I feel like PETG is probably stronger because it has more flex, but both work fine.
 
 To create a clip for a 3mm thick cable with 4 loops hooked through the clip, set `g_cable_d` to 3, and `g_cable_loops` to 4. On the command line, use the following flags:
 

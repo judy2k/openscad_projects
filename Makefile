@@ -1,4 +1,4 @@
-SUBPROJECTS := blobby cable_clip diamond fidget_cog_toy flower_pot_tray wart_sphere
+SUBPROJECTS := blobby cable_clip diamond fidget_cog_toy flower_pot_tray hull_chain wart_sphere
 
 all:
 	for d in $(SUBPROJECTS); do $(MAKE) -C $${d} all; done

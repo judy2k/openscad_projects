@@ -1,6 +1,8 @@
 include <BOSL/shapes.scad>
 
 module rib(jig_thickness, reinforcement_height) {
+    // A rib designed to be repeated around a hole.
+    // The rib should grip a bamboo pole, while also allowing the bamboo to compress around it.
     down(jig_thickness - 0.4)
     cyl(r=0.3, h=jig_thickness - 0.4 + reinforcement_height, align=V_UP, $fn=20);
 }

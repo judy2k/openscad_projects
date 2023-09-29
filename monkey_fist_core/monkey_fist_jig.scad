@@ -1,9 +1,5 @@
 include <BOSL/shapes.scad>
 
-size = 11;
-chamfer = 10 / 3;
-
-
 module rib(jig_thickness, reinforcement_height) {
     down(jig_thickness - 0.4)
     cyl(r=0.3, h=jig_thickness - 0.4 + reinforcement_height, align=V_UP, $fn=20);
@@ -45,6 +41,7 @@ module jig() {
             }
         }
     
+        // Add ribs for the holes:
         for (z = [0: 90: 270]) {
             zrot(z)
             translate([rod_shift + rod_r,rod_shift + rod_r,0]) {
